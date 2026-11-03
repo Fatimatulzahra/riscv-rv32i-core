@@ -12,7 +12,7 @@ module alu_tb;
   int tests  = 0;
   int errors = 0;
 
-  // The "device under test" (DUT): one copy of your ALU
+  // The "device under test" (DUT): one copy of ALU
   alu dut (
     .a(a),
     .b(b),
@@ -43,7 +43,7 @@ module alu_tb;
   endtask
 
   initial begin
-    // Save a waveform file you can open in GTKWave
+    // Save a waveform file to open in GTKWave
     $dumpfile("build/alu_tb.vcd");
     $dumpvars(0, alu_tb);
 
